@@ -1,0 +1,24 @@
+ body {
+     margin: 10px !important;
+     padding-top: 60px;
+ }
+ 
+ .nav-sidebar {
+     margin-bottom: 20px;
+     margin-left: -20px;
+     margin-right: -21px;
+ }
+ 
+ .nav-sidebar > li > a {
+     padding-left: 20px;
+     padding-right: 20px;
+     cursor: pointer;
+ }
+ 
+ .nav-sidebar > .active > a,
+ .nav-sidebar > .active > a:hover,
+ .nav-sidebar > .active > a:focus {
+     background-color: #428bca;
+     color: #fff;
+     cursor: pointer;
+ }
