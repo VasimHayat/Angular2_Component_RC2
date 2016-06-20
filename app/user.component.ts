@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from "./user.model";
-import {UserDetailComponent} from './user-detail.component';
+import {User} from "./user.model"; 
 
 const USERS: User[] = [
   { id: "EMP_0001", name: 'Mr. Nice',age:19,address:"New York" },
@@ -20,17 +19,14 @@ const USERS: User[] = [
 @Component({
     moduleId: module.id,
     selector: 'user-component',
-    templateUrl: 'user.component.html' ,
-    directives: [UserDetailComponent] 
+    templateUrl: 'user.component.html'  
 })
 export class UserComponent implements OnInit {    
-    public userList = [];
-    public selectedUser:User;
+    public userList = []; 
     constructor() {        
     }
     ngOnInit(){
-     this.userList = USERS;
-     this.selectedUser = this.userList[0];
+     this.userList = USERS; 
     }
      openUser(user:User) { 
         this.selectedUser = user;
