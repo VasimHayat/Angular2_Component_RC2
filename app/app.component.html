@@ -6,4 +6,32 @@
 
     </div>
 </nav>
-<user-component></user-component>
+<div class="row">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 main">
+                <h1 class="page-header">{{user.name}}</h1>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#UserID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let user of userList">
+                                <td>{{user.id}}</td>
+                                <td>{{user.name}}</td>
+                                <td>{{user.age}}</td>
+                                <td>{{user.address}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
